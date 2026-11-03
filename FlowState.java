@@ -13,24 +13,19 @@ public class FlowState {
         this.velocity = velocity;
     }
 
-    public double getPressure() {
-        return pressure;
-    }
-
-    public double getTemperature() {
-        return temperature;
-    }
-
-    public double getMachNumber() {
-        return machNumber;
-    }
-
-    public double getVelocity() {
-        return velocity;
-    }
+    public double getPressure() { 
+        return pressure; }
+    public double getTemperature() { 
+        return temperature; }
+    public double getMachNumber() { 
+        return machNumber; }
+    public double getVelocity() { 
+        return velocity; }
+    public String getStageName() { 
+        return stageName; }
 
     public void printState() {
-        System.out.printf("=== %s ===\n", stageName);
+        System.out.printf("--- %s ---\n", stageName);
         System.out.printf("Pressure:    %,.0f Pa\n", pressure);
         System.out.printf("Temperature: %.1f K\n", temperature);
         System.out.printf("Mach Number: %.2f\n", machNumber);
